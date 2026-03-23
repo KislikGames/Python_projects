@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import random
+
+fig, ax = plt.subplots(figsize=(6, 6))
+ax.set_xlim(-8, 8)
+ax.set_ylim(-8, 8)
+ax.set_aspect('equal')
+ax.axis('off')
+
+for _ in range(random.randint(50, 150)):
+    x = random.uniform(-7, 7)
+    y = random.uniform(-7, 7)
+    radius = random.uniform(0.2, 1.2)
+    color = (random.random(), random.random(), random.random())
+    alpha = random.uniform(0.3, 0.8)
+    circle = plt.Circle((x, y), radius, color=color, alpha=0.1)
+    ax.add_patch(circle)
+
+plt.show()
