@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.venv/
+.env
 agent_memory.db
 test_memory.db
-.venv/
